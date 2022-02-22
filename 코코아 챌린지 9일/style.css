@@ -1,0 +1,110 @@
+body {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body section {
+    background-color: teal;
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background:white;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    transform: center;
+    animation: rotate 2s ease forwards infinite;
+}
+
+.circle{
+    background:white;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.circle:nth-child(1) {
+    left:-50px;
+}
+
+.circle:nth-child(2) {
+    left:50px;
+    top:-10px;
+}
+
+@keyframes rotate{
+    0%{
+        transform:rotate(0deg);
+    }
+
+    50%{
+        transform:rotate(0deg);
+    }
+
+    100%{
+        transform:rotate(180deg);
+    }
+}
+
+.container2 {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 120px;
+    height: 100px;
+}
+
+.container2 .squares div{
+    display: inline-block;
+    background: white;
+    width: 13px;
+    height: 80px;
+    position: relative;
+    animation: scaleBounce 0.3s alternate infinite;
+    animation-duration: 0.8s;
+}
+
+@keyframes scaleBounce{
+    from {transform:scale(0.7)}
+    to {transform: scale(1.3)}
+}
+
+
+.container2 .squares div:nth-child(1) {
+    animation-delay: 0s;
+}
+.container2 .squares div:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.container2 .squares div:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.container2 .squares div:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.container2 .squares div:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+@keyframes bounce {
+    0%{
+        top: 10px;
+    }
+    50%{
+        top: 5px;
+    }
+    100%{
+        top: 0px;
+    }
+}
