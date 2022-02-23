@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    border:solid 10px #00c6ad;
+    height:auto;
+    width: 500px;
+    display:flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-left: -20px;
+}
+
+.music{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.music__picture{
+    background-color: #ffbd11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border: solid 3px black;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.music__right{
+    margin-left: 30px;
+    margin-right: -20px;
+    padding-right: 50px;
+}
+
+.music__name{
+    font-size: 50px;
+    font-weight:1000;
+}
+
+.music__singer{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.player {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.play{
+    background-color: white;
+    border:solid 3px black;
+    border-radius: 20px;
+    box-shadow: 0px 5px 0px 0px;
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: -10px;
+}
+
+.heart{
+    background-color: white;
+    border:solid 3px black;
+    border-radius: 100%;
+    box-shadow: 0px 5px 0px 0px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0px -60px 0px -60px;
+    font-size: 40px;
+}
+
+.plus{
+    background-color: white;
+    border:solid 3px black;
+    border-radius: 100%;
+    box-shadow: 0px 5px 0px 0px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.add{
+    margin: 50px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.red{
+    display: flex;
+    justify-content:space-between;
+    height: 60px;
+
+}
+
+.red div:first-child{
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border: solid 3px black;
+    border-radius: 10px;
+}
+
+.red div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-left: -250px;
+}
+
+.red div h2{
+    margin: -10px 0 -30px 20px;
+}
+
+.red div h4{
+    margin: 40px 0px 0px 22px;
+    color:grey;
+}
+
+.pink{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 40px;
+}
+
+.pink div:first-child{
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+    height: 60px;
+    background-color: pink;
+    border: solid 3px black;
+    border-radius: 10px;
+}
+
+.pink div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-left: -175px;
+}
+
+.pink div h2{
+    margin: -10px 0 -30px 20px;
+}
+
+.pink div h4{
+    margin: 40px 0px 0px 22px;
+    color:grey;
+}
+
+
+.blue{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 40px;
+}
+
+.blue div:first-child{
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    border: solid 3px black;
+    border-radius: 10px;
+}
+
+.blue div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-left: -210px;
+}
+
+.blue div h2{
+    margin: -10px 0 -30px 20px;
+}
+
+.blue div h4{
+    margin: 40px 0px 0px 22px;
+    color:grey;
+}
+
+.green{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.green div:first-child{
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+    height: 60px;
+    background-color: #00c6ad;
+    border: solid 3px black;
+    border-radius: 10px;
+}
+
+.green div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-left: -140px;
+
+}
+
+.green div h2{
+    margin: -10px 0 -30px 20px;
+}
+
+.green div h4{
+    margin: 40px 0px 0px 22px;
+    color:grey;
+}
