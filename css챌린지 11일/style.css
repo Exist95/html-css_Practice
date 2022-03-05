@@ -4,6 +4,7 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
+  border-collapse: collapse;
 }
 .left {
     display: grid;
@@ -12,30 +13,81 @@ body {
     background-color: #ff7400;
     padding: 5px;
 }
-
 .left__content{
     display: grid;
-    grid-template-columns: 1fr 3fr 2fr;
-    grid-template-rows: 1fr;
-    border: 2px solid #ff0400;
+    grid-template-columns: 0.3fr 4fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid #ff0400;
 }
-
 .left__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column: 1/2;
-    grid-row: 1/2;
-    background-color: antiquewhite;
+    grid-row: 1/3;
+    writing-mode:vertical-rl;
+    -webkit-transform: rotate(180deg);
+    color: #ff0400;
+    font-weight: 600;
+    border-left: 1px solid #ff0400;
 }
-
 .left__center {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
     grid-column: 2/3;
-    grid-row: 1/2;
-    background-color: blueviolet;
+    grid-row: 1/3;
+    font-size: 50px;
+    border-right: 1px solid #ff0400;
+    color: #ff0400;
 }
-
-.left__right {
+.left__right__up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column: 3/4;
     grid-row: 1/2;
-    background-color: aquamarine;
+    padding: auto;
+    font-size: 8px;
+    color: #ff0400;
+}
+.left__right__down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    padding: auto;
+    border-top: 1px solid #ff0400;
+    font-size: 8px;
+    color: #ff7400;
+}
+.border {
+    background-color: #ff0400;
+    width: 90%;
+    height: 80%;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-child(1) {
+    border-bottom: none;
+}
+section:nth-child(n+2) {
+    border-top:none;
+}
+section:nth-child(2) {
+    border: 0.5px solid white;
+}
+section:nth-child(2) > div:nth-child(n) {
+    border: 0.5px solid white;
+    color: white;
+}
+section:nth-child(2) > div:nth-child(4) > .border{
+    background-color: white;
+    color: #ff7400;
 }
 
 
