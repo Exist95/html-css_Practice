@@ -1,0 +1,42 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.center {
+    display: grid;
+    grid-row: 1fr 1fr;
+    flex-direction: column;
+    width: 5%;
+    height: 100vh;
+    font-weight: 600;
+    position: relative;
+}
+
+.center div:nth-child(1) {
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    background-color: palevioletred;
+    writing-mode: vertical-lr;
+    padding-top: 5px;
+}
+
+.center div:nth-child(2) {
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    padding-top: 5px;
+    writing-mode: vertical-lr;
+    -webkit-transform: rotate(180deg);
+}
+
+.center > .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    font-size: 150px;
+}

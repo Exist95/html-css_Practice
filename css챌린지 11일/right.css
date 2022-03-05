@@ -1,0 +1,44 @@
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    background-color: red;
+    padding-left: 10px;
+}
+.right__flex {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 20px 8px;
+}
+.right__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.box {
+    width: 90%;
+    height: 13.2vh;
+    padding: 0 5px;
+    border-top: 1px solid black;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.des {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+
