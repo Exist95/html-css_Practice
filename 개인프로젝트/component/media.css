@@ -1,0 +1,39 @@
+.min_window {
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  top: 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) and (min-height: 600px) {
+  .min_window {
+    display: none;
+  }
+}
+
+.max_window {
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  top: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) and (max-height: 800px) {
+  .max_window {
+    display: none;
+  }
+}
