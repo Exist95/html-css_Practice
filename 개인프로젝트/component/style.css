@@ -9,7 +9,7 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  height: 200px;
+  height: 100%;
   width: 100%;
   background: white;
 }
@@ -43,23 +43,20 @@ input {
   margin: 10px 0 0 0;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 20px;
-  border: 3px solid black;
-  font-size: xx-large;
-  margin: 20px;
-  overflow: hidden;
-  background-color: white;
-}
-
 section {
   display: flex;
   justify-content: space-evenly;
 }
 
-.next {
+button {
+  width: 50px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.next,
+.pre {
+  padding-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,15 +68,15 @@ section {
 
 img {
   width: 35vw;
-  height: 40vw;
+  height: 38vw;
   padding: 0;
 }
 
-.right {
+.picture_right {
   padding-right: 100px;
 }
 
-.left {
+.picture_left {
   padding-left: 100px;
 }
 
